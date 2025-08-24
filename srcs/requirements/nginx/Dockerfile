@@ -1,4 +1,4 @@
-FROM Debian:testing-backports
+FROM Debian:
 
 # EXPOSE /home/vboxuser/Inception
 
@@ -10,7 +10,8 @@ RUN apt-get install -y ngnix
 
 RUN apt-get install -y certbot
 
-# RUN rm -f 
+#get the certificate command   
+# RUN 
 
 COPY /home/vboxuser/Inception/srcs/requirememts/nginx/tools/nginx.conf /etc/nginx/nginx.conf
 
